@@ -1,0 +1,133 @@
+baseURL: "https://examplesite.com/" # 域名
+languageCode: zh-cn # 语言
+title: ExampleSite # 网站title
+paginate: 5 # 每页显示的文章数
+theme: PaperMod # 主题 enableRobotsTXT: true # 从模版生产robot.txt文件, 用于允许或禁止爬虫
+buildDrafts: false # draft pages不会发布
+buildFuture: false # publishdate在将来的不会发布
+buildExpired: false # 过期的不会发布
+
+
+minify:
+  disableXML: true # 不生成index.xml
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  # title: ExampleSite # 网站title
+  # description: "ExampleSite description" # 网站description
+  keywords: [Xin Blog] # 网站关键词
+  author: Xin # 网站作者
+  DateFormat: "January 2, 2006" # 时间格式
+  defaultTheme: auto # dark, light # 默认主题
+  disableThemeToggle: false # 禁用切换主题
+
+  ShowReadingTime: true # 展示阅读耗时时长
+  ShowShareButtons: true # 展示分享按钮
+  ShowPostNavLinks: true # 展示上一篇、下一篇跳转
+  ShowBreadCrumbs: true # Show BreadCrumb Navigation above single post/page
+  ShowCodeCopyButtons: true # 显示代码复制按钮
+  ShowWordCount: true # 展示文章单词数
+  ShowRssButtonInSectionTermList: true # To show RSS icon in Section, Term and List pages
+  UseHugoToc: true # To use Hugo's default Toc instead of custom
+  disableSpecial1stPost: false # To disable no-card special appearance of 1st post
+  disableScrollToTop: false # 禁用滑动到顶部按钮
+  comments: false # 开启评论
+  hidemeta: false # 隐藏文章的meta信息
+  hideSummary: false # To Hide summary being shown in list pages
+  showtoc: true # 显示目录
+  tocopen: true # 默认目录展开
+  hideFooter: true # 隐藏footer
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>" # 网站favicon
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Xin's Blog"
+    icon: "https://img2.baidu.com/it/u=792555388,2449797505&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # 进来先展示个人资料
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  # home页面信息展示
+  # homeInfoParams:
+  #   Title: "Hi there \U0001F44B"
+  #   Content: Welcome to my blog
+
+  # 社交媒体icon
+  # socialIcons:
+  #   - name: x
+  #     url: "https://x.com/"
+  #   - name: stackoverflow
+  #     url: "https://stackoverflow.com"
+  #   - name: github
+  #     url: "https://github.com/"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # 编辑文章
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # 文章搜索
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+# 菜单
+menu:
+  main:
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 10
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true # 代码围栏
+    # guessSyntax: true
+    # lineNos: true # 显示行号
+    # style: monokai
