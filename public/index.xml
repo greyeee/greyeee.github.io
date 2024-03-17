@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ExampleSite</title>
-    <link>http://localhost:1313/</link>
+    <link>https://examplesite.com/</link>
     <description>Recent content on ExampleSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 16 Mar 2024 12:44:03 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://examplesite.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>云存储订阅设计</title>
-      <link>http://localhost:1313/posts/subscription/</link>
+      <link>https://examplesite.com/posts/subscription/</link>
       <pubDate>Sat, 16 Mar 2024 12:44:03 +0800</pubDate>
-      <guid>http://localhost:1313/posts/subscription/</guid>
+      <guid>https://examplesite.com/posts/subscription/</guid>
       <description>需求 摄像头录像云存储套餐订阅，分月、年套餐，分基础版、高级版套餐，区别是最多可用设备数不同。 google play、app store内购采用升降级套餐，stripe、paypal平台采用购买多个套餐，用户可选择内购或stripe、paypal购买。 全球有4大区（us, eu, ap, cn），各区订阅不互通。 领域建模 套餐 // Plan 套餐 type Plan struct { Id int // 套餐id Names map[string]string // 各个语言的名称 Descriptions map[string]string // 各个语言的描述 PeriodInDays int // 有效天数 MaxDeviceCount int // 最多可用设备数 Products []Product // 各支付平台产品配置 } // Product 支付平台产品配置 type Product struct { Id string // 支付平台的产品id，google play、app store的product id，stripe的price id，paypal的plan id Platform Platform // 支付平台 Prices map[string]Price // 各个地区的价格 } // Platform 支付平台 type Platform string const ( PlatformGooglePlay Platform = &amp;#34;google_play&amp;#34; PlatformAppStore Platform = &amp;#34;app_store&amp;#34; PlatformStripe Platform = &amp;#34;stripe&amp;#34; PlatformPaypal Platform = &amp;#34;paypal&amp;#34; ) // Price 价格 type Price struct { CurrencyCode string // 货币编码 Value string // 数额 } 订阅 // Subscription 维护订阅的生命周期 type Subscription struct { Id string // 订阅id UserId string // 用户id PlanId string // 套餐id PendingPlanId string // 下一个周期变更的套餐id Platform Platform // 支付平台 Status SubscriptionStatus // 订阅状态 ExpiresAt time.</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>https://examplesite.com/posts/my-first-post/</link>
       <pubDate>Sat, 16 Mar 2024 12:00:54 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>https://examplesite.com/posts/my-first-post/</guid>
       <description>Test, tesfdsfsddsfs</description>
     </item>
   </channel>
