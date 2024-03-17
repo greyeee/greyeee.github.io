@@ -201,3 +201,6 @@ event, err := webhook.ConstructEvent(payload, header, secret)
 
 可以启动一个定时器，在订阅过期时间之后一小段时间调用支付平台的查看订阅信息api，来更新业务的订阅。如果支付平台的续订通知准时到达并处理了，则取消这个定时器。
 
+## 升降级
+
+google play的升降级是立即生效，app store的升级是立即生效，降级是下一个周期生效，用`pendingProductId`记录待变更的套餐id，进入下一个周期时，更新`productId`为`pendingProductId`。
