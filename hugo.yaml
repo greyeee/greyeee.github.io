@@ -35,10 +35,9 @@ params:
   comments: false # 开启评论
   hidemeta: false # 隐藏文章的meta信息
   hideSummary: false # To Hide summary being shown in list pages
-  showtoc: true # 显示目录
-  tocopen: true # 默认目录展开
+  showtoc: true # 显示文章内容目录
+  tocopen: true # 文章内容目录展开
   hideFooter: true # 隐藏footer
-  toc: false # 禁用自动生成文章内容目录
 
   assets:
     # disableHLJS: true # to disable highlight.js
