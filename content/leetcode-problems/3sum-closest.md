@@ -36,7 +36,7 @@ draft = false
 
 ## 解题思路
 
-排序+双指针，和[3Sum](/leetcode-problems/3sum)思路一样，只是求的是最接近target的三数之和，维护最接近的和ans和最小差值minDiff，当总和更靠近时更新ans和minDiff。
+排序+双指针，和[3Sum](/leetcode-problems/3sum)思路一样，只是求的是最接近target的三数之和，维护最接近的和`ans`和最小差值`minDiff`，当总和更靠近时更新`ans`和`minDiff`。
 
 ## 代码
 

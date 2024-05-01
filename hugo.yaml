@@ -115,11 +115,11 @@ menu:
       url: /posts/
       weight: 10
     - identifier: leetcode topics
-      name: leetcode topics
+      name: leetcode专题
       url: /leetcode-topics/
       weight: 20
     - identifier: leetcode problems
-      name: leetcode problems
+      name: leetcode题解
       url: /leetcode-problems/
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma

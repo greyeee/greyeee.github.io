@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/leetcode-problems/3sum-closest/</loc>
-    <lastmod>2024-05-01T09:54:21+08:00</lastmod>
-  </url><url>
     <loc>https://examplesite.com/</loc>
-    <lastmod>2024-05-01T09:54:21+08:00</lastmod>
+    <lastmod>2024-05-01T11:29:30+08:00</lastmod>
   </url><url>
     <loc>https://examplesite.com/leetcode-problems/</loc>
+    <lastmod>2024-05-01T11:29:30+08:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/leetcode-problems/next-permutation/</loc>
+    <lastmod>2024-05-01T10:55:07+08:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/leetcode-problems/remove-element/</loc>
+    <lastmod>2024-05-01T10:48:33+08:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/leetcode-problems/remove-duplicates-from-sorted-array/</loc>
+    <lastmod>2024-05-01T10:38:09+08:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/leetcode-problems/remove-nth-node-from-end-of-list/</loc>
+    <lastmod>2024-05-01T10:27:41+08:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/leetcode-problems/4sum/</loc>
+    <lastmod>2024-05-01T10:14:47+08:00</lastmod>
+  </url><url>
+    <loc>https://examplesite.com/leetcode-problems/3sum-closest/</loc>
     <lastmod>2024-05-01T09:54:21+08:00</lastmod>
   </url><url>
     <loc>https://examplesite.com/leetcode-problems/3sum/</loc>
