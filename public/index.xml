@@ -6,8 +6,63 @@
     <description>Recent content on ExampleSite</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 24 Apr 2024 22:07:33 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 May 2024 09:54:21 +0800</lastBuildDate>
     <atom:link href="https://examplesite.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>16. 最接近的三数之和</title>
+      <link>https://examplesite.com/leetcode-problems/3sum-closest/</link>
+      <pubDate>Wed, 01 May 2024 09:54:21 +0800</pubDate>
+      <guid>https://examplesite.com/leetcode-problems/3sum-closest/</guid>
+      <description>题目 给你一个长度为 n 的整数数组 nums 和 一个目标值 target。请你从 nums 中选出三个整数，使它们的和与 target 最接近。
+返回这三个数的和。
+假定每组输入只存在恰好一个解。
+示例 1：
+输入：nums = [-1,2,1,-4], target = 1 输出：2 解释：与 target 最接近的和是 2 (-1 + 2 + 1 = 2) 。 示例 2：
+输入：nums = [0,0,0], target = 1 输出：0 提示：
+3 &amp;lt;= nums.length &amp;lt;= 1000 -1000 &amp;lt;= nums[i] &amp;lt;= 1000 -104 &amp;lt;= target &amp;lt;= 104 解题思路 排序+双指针，和3Sum思路一样，只是求的是最接近target的三数之和，维护最接近的和ans和最小差值minDiff，当总和更靠近时更新ans和minDiff。
+代码 func threeSumClosest(nums []int, target int) int { sort.</description>
+    </item>
+    <item>
+      <title>15. 三数之和</title>
+      <link>https://examplesite.com/leetcode-problems/3sum/</link>
+      <pubDate>Mon, 29 Apr 2024 22:19:48 +0800</pubDate>
+      <guid>https://examplesite.com/leetcode-problems/3sum/</guid>
+      <description>题目 给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums[j], nums[k]] 满足 i != j、i != k 且 j != k ，同时还满足 nums[i] + nums[j] + nums[k] == 0 。请
+你返回所有和为 0 且不重复的三元组。
+**注意：**答案中不可以包含重复的三元组。
+示例 1：
+输入：nums = [-1,0,1,2,-1,-4] 输出：[[-1,-1,2],[-1,0,1]] 解释： nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0 。 nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0 。 nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0 。 不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。 注意，输出的顺序和三元组的顺序并不重要。 示例 2：</description>
+    </item>
+    <item>
+      <title>双指针</title>
+      <link>https://examplesite.com/leetcode-topics/two-pointers/</link>
+      <pubDate>Sun, 28 Apr 2024 23:01:32 +0800</pubDate>
+      <guid>https://examplesite.com/leetcode-topics/two-pointers/</guid>
+      <description> No. Title Difficulty Time Complexity Space Complexity 11 盛最多水的容器 Medium $O(n)$ $O(1)$ 15 三数之和 Medium $O(n^2)$ $O(n)$ 16 最接近的三数之和 Medium $O(n^2)$ $O(1)$ </description>
+    </item>
+    <item>
+      <title>11. 盛最多水的容器</title>
+      <link>https://examplesite.com/leetcode-problems/container-with-most-water/</link>
+      <pubDate>Sun, 28 Apr 2024 22:20:30 +0800</pubDate>
+      <guid>https://examplesite.com/leetcode-problems/container-with-most-water/</guid>
+      <description>题目 给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。
+找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+返回容器可以储存的最大水量。
+示例 1：
+输入：[1,8,6,2,5,4,8,3,7] 输出：49 解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。 示例 2：
+输入：height = [1,1] 输出：1 提示：
+n == height.length 2 &amp;lt;= n &amp;lt;= 105 0 &amp;lt;= height[i] &amp;lt;= 104 解题思路 面积S = (j - i) * min(h[i], h[j]), j &amp;gt; i 在(1, n)中找出使面积S最大的(i, j)，最简单的方法就是遍历(i, j)的所有可能并比较所有面积。
+发现以下规律
+当h[i] &amp;lt; h[j]时，不需要计算(i, j-1), (i, j-2), &amp;hellip;，因为它们的面积一定小于(i, j)的面积，因为宽度变小，高度一定&amp;lt;=h[i]。所以下一步应该检查(i+1, j)的面积。 同理h[i] &amp;gt;= h[j]时，不需要计算(i+1, j), (i+2, j), &amp;hellip;， 所以下一步应该检查(i, j-1)的面积。 首尾对撞指针，每次高度较低的指针往中间移动，计算面积更新最大面积。</description>
+    </item>
+    <item>
+      <title>Home Kit配对协议</title>
+      <link>https://examplesite.com/posts/home-kit-paring/</link>
+      <pubDate>Sat, 27 Apr 2024 11:16:11 +0800</pubDate>
+      <guid>https://examplesite.com/posts/home-kit-paring/</guid>
+      <description>SRP协议 SRP 是一种基于密码的相互身份验证的协议，要求双方都知道用户的密码。在身份验证过程中还生成了共享密钥，可通过对称加密来加密报文。
+约定解释 N A large safe prime (N = 2q+1, where q is prime)，All arithmetic is done modulo N. g A generator modulo N k Multiplier parameter (k = H(N, g) in SRP-6a, k = 3 for legacy SRP-6) s User&amp;#39;s salt I Username p Cleartext Password H() One-way hash function ^ (Modular) Exponentiation u Random scrambling parameter a,b Secret ephemeral values A,B Public ephemeral values x Private key (derived from p and s) v Password verifier N 安全的大素数，所有的运算都是mod N g A generator modulo N k Multiplier parameter (k = H(N, g) in SRP-6a, k = 3 for legacy SRP-6) s 加盐，是一种随机产生的数据，用于保护密码的安全 I 用户名 p 明文密码 H() 单向哈希函数，不可逆 ^ 模幂运算，即求a^b mod n的值 u 随机混淆参数，用于增加安全性 a,b 秘密临时值，是随机生成的大整数 A,B 公开临时值，用于身份验证的过程中 x 私钥，由密码p和盐值s衍生而来 v 密码验证器，由g^x mod N计算得出，用于在服务器端验证用户的密码 生成和存储Password Verifier 通过以下公式生成password verifier，服务端将{I, s, v}存储到数据库，可通过索引键I获取该三元组。</description>
+    </item>
     <item>
       <title>夏令时</title>
       <link>https://examplesite.com/posts/daylight-saving-time/</link>

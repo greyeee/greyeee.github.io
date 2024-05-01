@@ -38,6 +38,7 @@ params:
   showtoc: true # 显示文章内容目录
   tocopen: true # 文章内容目录展开
   hideFooter: true # 隐藏footer
+  math: true
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -113,14 +114,14 @@ menu:
       name: posts
       url: /posts/
       weight: 10
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: leetcode topics
+      name: leetcode topics
+      url: /leetcode-topics/
       weight: 20
+    - identifier: leetcode problems
+      name: leetcode problems
+      url: /leetcode-problems/
+      weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
